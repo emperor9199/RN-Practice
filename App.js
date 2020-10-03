@@ -2,9 +2,10 @@ import "react-native-gesture-handler";
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import HomeScreen from "./screens/HomeScreen";
-import CounterScreen from "./screens/CounterScreen";
-import GenerateColorScreen from "./screens/GenerateColorScreen";
+import HomeScreen from "./src/screens/HomeScreen";
+import CounterScreen from "./src/screens/CounterScreen";
+import GenerateColorScreen from "./src/screens/GenerateColorScreen";
+import ColorChangeScreen from "./src/screens/ColorChangeScreen";
 
 const Stack = createStackNavigator();
 
@@ -15,6 +16,7 @@ export default function App() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Counter" component={CounterScreen} />
         <Stack.Screen name="GenerateColor" component={GenerateColorScreen} />
+        <Stack.Screen name="ColorChange" component={ColorChangeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
